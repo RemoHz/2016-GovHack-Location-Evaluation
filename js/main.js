@@ -42,16 +42,6 @@ var res, score;
             }
         }
 
-        // function ulClick(){
-        //     var ul = document.getElementById("suggest_ul");
-        //     var lis = ul.getElementsByTagName("li");
-        //     console.log(res);
-        //     for(var i = 0; i < lis.length; i++){
-        //         lis[i].onclick = function(){
-        //             // alert(i);
-        //         }
-        //     }
-        // }
 
         var markers = []; 
         // = new L.marker();
