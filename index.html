@@ -1,52 +1,62 @@
 <!doctype html>
+
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>Your Residence</title>
-  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
-  <meta name="description" content="Location Location Location">
-  <link rel="shortcut icon" href="asset/icon.png">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Your Residence</title>
+    <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+    <meta name="description" content="Location Location Location">
+    <link rel="shortcut icon" href="asset/icon.png">
 
-  <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 
-  <script src="https://use.typekit.net/nlq1kdt.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://use.typekit.net/nlq1kdt.js"></script>
+    <script>
+        try {
+            Typekit.load({
+                async: true
+            });
+        } catch (e) {}
+    </script>
 </head>
-<body>
-  <div id="container">
-    <video id="background_video" loop muted></video>
-    <div id="video_cover"></div>
-    <div id="overlay"></div>
 
-    <div id="video_controls">
-      <span id="play">
-        <img src="asset/play.png">
-      </span>
-      <span id="pause">
-        <img src="asset/pause.png">
-      </span>
+<body>
+    <div id="container">
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+        <div id="overlay"></div>
+
+        <div id="video_controls">
+            <span id="play">
+                <img src="asset/play.png">
+            </span>
+            <span id="pause">
+                <img src="asset/pause.png">
+            </span>
+        </div>
+
+        <section id="main_content">
+            <div id="head">
+                <h1>Find Your Best Residence</h1>
+                <p class="sub_head">Is that property safe? Is the transportation convenient?
+                    <br> "Location Location Location" is your one-stop location insight for your next property, either rental or purchasable.
+                    <br> Try it now and stop spending hundreds of precious hours digging the Internet!
+                </p>
+            </div>
+
+            <div id="links">
+                <a href="maps.html">Try It</a>
+            </div>
+        </section>
     </div>
 
-    <section id="main_content">
-      <div id="head">
-        <h1>Find Your Best Residence</h1>
-        <p class="sub_head">Is that property safe? Is the transportation convenient?<br>
-"Location Location Location" is your one-stop location insight for your next property, either rental or purchasable.<br>
-Try it now and stop spending hundreds of precious hours digging the Internet!</p>
-      </div>
+    <div id="footer">
+        &copy;Copyright Location Location Location
+    </div>
 
-      <div id="links">
-        <a href="maps.html">Try It</a>
-      </div>
-    </section>
-  </div>
-
-  <div id="footer">
-    &copy;Copyright Location Location Location
-  </div>
-
-  <script src="js/bideo.js"></script>
-  <script src="js/home.js"></script>
+    <script src="js/bideo.js"></script>
+    <script src="js/home.js"></script>
 
 </body>
+
 </html>

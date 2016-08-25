@@ -117,7 +117,7 @@ var res, score;
                         dir.route({
                             locations:[
                                 {latLng: {lat: markers[0].getLatLng().lat, lng: markers[0].getLatLng().lng}},
-                                {latLng:{lat: markers[i].getLatLng().lat, lng: markers[i].getLatLng().lng}}                            ]
+                                {latLng:{lat: markers[i].getLatLng().lat, lng: markers[i].getLatLng().lng}}]
                         });
                         map.addLayer(MQ.routing.routeLayer({
                             directions: dir,

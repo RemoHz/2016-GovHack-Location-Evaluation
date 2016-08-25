@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Your Residence</title>
-    
+
     <link rel="shortcut icon" href="asset/icon.png">
 
     <!--Load Local Data-->
     <script src="data/criminal_record.json" type="text/javascript"></script>
-    
+
     <!--Load CSS-->
     <link rel="stylesheet" href="css/sideNav.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
@@ -30,6 +31,7 @@
     <script src="https://www.mapquestapi.com/sdk/leaflet/v2.s/mq-routing.js?key=EQEkA7tsr2r42gKoQ6ckesaiaDHOmOI5"></script>
 
 </head>
+
 <body>
     <div id="main">
         <div id="map"></div>
@@ -37,20 +39,20 @@
             <button class="btn" onclick="openNav()">Search</button>
         </div>
         <script type="text/javascript">
-            var map = L.map( 'map', {
+            var map = L.map('map', {
                 center: [-37.8, 145.0],
                 minZoom: 2,
                 zoom: 11,
                 zoomControl: false
             });
 
-            L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                subdomains: ['a','b','c'],
-            }).addTo( map );
+                subdomains: ['a', 'b', 'c'],
+            }).addTo(map);
 
             L.control.zoom({
-                 position:'topright'
+                position: 'topright'
             }).addTo(map);
         </script>
     </div>
@@ -59,7 +61,7 @@
         <div>
 
             <input type="text" id="address0" placeholder="Property Address" autocomplete="off" onkeyup="nominati(event, 0)" style="height: 24px; width: 90%; margin-left: 10px">
-            
+
             <ul id="suggest_ul0" class="suggest_ul" hidden>
             </ul>
 
@@ -83,4 +85,5 @@
         </div>
     </div>
 </body>
+
 </html>
